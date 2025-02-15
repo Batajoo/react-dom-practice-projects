@@ -66,6 +66,7 @@ export class Service{
         }
     }
 
+    // getPost method
     async getPost(slug){
         try{
             return await this.databases.getDocument(
