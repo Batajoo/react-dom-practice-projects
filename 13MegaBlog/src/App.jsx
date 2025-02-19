@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import { useDispatch } from 'react-redux';
 
 // new function 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log(import.meta.env.VITE_ARPWRITE_URL);
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
   return (
     <>
       Hi world
