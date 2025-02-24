@@ -46,6 +46,21 @@ function Login() {
             >Sign Up</Link>
           </p>
           {error && <p className='text-red-600 mt-8 text-center'>{error}</p>}
+          <form onSubmit={handleSubmit(login)}
+            className='space-y-5'
+          >
+            <Input 
+              label="Email: "
+              placeholder="Enter your email"
+              type="email"
+              {...register("email", {
+                required: true,
+                validate: {
+                  matchPattern: (value) => 
+                }
+              })}
+            />
+          </form>
         </div>
     </div>
   )
