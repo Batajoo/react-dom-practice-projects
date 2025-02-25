@@ -13,7 +13,7 @@ function Login() {
     const {register, handleSubmit} = useForm()
     const [error, setError] = useState("")
     
-    // login
+    // login function
     const login = async (data) => {
       setError("")
       try {
