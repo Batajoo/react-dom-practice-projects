@@ -56,10 +56,22 @@ function Login() {
               {...register("email", {
                 required: true,
                 validate: {
-                  matchPattern: (value) => 
+                  matchPattern:(value) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value) || "Email address must be a valid address",
+
                 }
               })}
             />
+            <Input 
+              label="Password: "
+              type="password"
+              placeholder="Enter your password"
+              {...register("password",{
+                required: true
+              })}
+            />
+            <Button
+              type="w-full"
+            >Sign in</Button>
           </form>
         </div>
     </div>
