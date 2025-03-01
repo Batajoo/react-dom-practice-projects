@@ -12,6 +12,7 @@ function Signup() {
     const dispatch = useDispatch()
     const {register, handleSubmit} = useForm()
 
+    //create sign up 
     const create = async(data) => {
         setError("")
         try {
