@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux'
 import authService from '../appwrite/auth'
 import { useForm } from 'react-hook-form'
 
+// login react componenet
 function Login() {
     // need to revise how to use redux toolkit and navigate as well and read the docs of useForm
     const navigate = useNavigate()
