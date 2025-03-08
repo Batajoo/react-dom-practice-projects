@@ -6,8 +6,10 @@ import { Provider } from 'react-redux'
 import store  from './store/store.js'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/pages/Home.jsx'
-import { AuthLayout, Login, Signup } from './components/index.js'
+import { AuthLayout, Login } from './components/index.js'
+
 import AddPost from './components/pages/AddPost.jsx'
+import Signup from './components/pages/Signup.jsx'
 import EditPost from './components/pages/EditPost.jsx'
 import Post from './components/pages/Post.jsx'
 
@@ -18,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home/>
+        element: <Login/>
       },
       {
         path: "/login",
