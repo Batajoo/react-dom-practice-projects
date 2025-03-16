@@ -11,7 +11,8 @@ function Post() {
     const navigate = useNavigate();
 
     const userData = useSelector((state)=>state.auth.userData);
-
+    
+    // to check if there is author or not
     const isAuthor = post && userData ? post.userId === userData.$id : false;
 
     useEffect(()=>{
