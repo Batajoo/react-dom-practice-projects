@@ -90,9 +90,10 @@ export class Services {
 
     async uploadFile(file){
         try {
+            console.log(file);
             return await this.bucket.createFile(
                 conf.appwriteBucketId,
-                ID.unique,
+                ID.unique(),
                 file
             )
         }catch(error){
